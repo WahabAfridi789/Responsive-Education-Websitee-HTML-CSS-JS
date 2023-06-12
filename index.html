@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <nav>
+    <div id="navBar" class="container nav__container">
+      <a href="index.html">
+        <h4>Abdul Wahab</h4>
+      </a>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header__container">
+      <div class="header__left">
+        <h1>Grow Your SKills to Advance You Carrier</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptas, quod, quia, voluptate quae voluptates quibusdam
+          necessitatibus quidem voluptatum quas.
+        </p>
+        <a href="courses.html" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="header__right">
+        <div class="header__right-image">
+          <img src="images/header.svg" alt="header-img" />
+        </div>
+      </div>
+  </header>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="container categories__container">
+      <div class="categories__left">
+        <h1>Categories</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptas, quod, quia, voluptate quae voluptates quibusdam
+          necessitatibus quidem voluptatum quas. </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div id="categoriesList" class="categories__right">
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+
+  <section class="courses">
+    <h2>
+      Our Popular Courses
+    </h2>
+    <div id="popularCourses" class="container courses__container">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div id="faqss" class="container faqs__container">
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container testimonials__container mySwiper">
+    <h2>Students's Testimonails</h2>
+    <div id="testimonialsList" class="swiper-wrapper">
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__1"></div>
+
+        <div class="footer__2"></div>
+
+        <div class="footer__3"></div>
+
+        <div class="footer__4"></div>
+      </div>
+
+      <div class="footer__copyright"></div>
+    </footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="js/main.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/faqs.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/navBar.js"></script>
+  <script src="js/footer.js" ></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 640px
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+</body>
+
+</html>

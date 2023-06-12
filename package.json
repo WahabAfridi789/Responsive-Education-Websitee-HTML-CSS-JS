@@ -1,0 +1,15 @@
+{
+  "name": "fontawesome",
+  "version": "1.0.0",
+  "description": "fontawesome",
+  "type":"module",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1"
+  }
+
+  
+
+
+
+}
+
